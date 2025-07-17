@@ -1,9 +1,8 @@
 services:
   - type: web
-    name: autoview-backend
-    runtime: python
+    name: auto-visitor-bot
+    env: python
+    plan: free
     buildCommand: ""
-    startCommand: python app.py
-    envVars:
-      - key: PORT
-        value: 10000
+    startCommand: python bot.py
+    envVars: []
